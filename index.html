@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#142b25">
+    <meta name="description" content="Hampton-in-Arden Metal Detecting Club — unearthing our village history in Solihull, West Midlands.">
+    <title>Hampton-in-Arden Metal Detecting Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <!-- Header and navigation -->
+    <header class="header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Hampton-in-Arden Metal Detecting Club home">
+          <img src="images/club-badge.png" alt="" width="1024" height="1536">
+          <span>
+            <strong>Hampton-in-Arden</strong>
+            <small>Metal Detecting Club</small>
+          </span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="navigation" class="navigation" aria-label="Main navigation">
+          <a href="#about">Our club</a>
+          <a href="#moments">Gallery</a>
+          <a href="#approach">Our approach</a>
+          <a class="nav-button" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <!-- Hero -->
+      <section id="top" class="hero hero-photo" aria-labelledby="hero-title">
+        <picture class="hero-picture">
+          <source media="(min-width: 769px)" srcset="images/hero_desktop.png">
+          <img class="hero-background" src="images/hero_mobile.png" alt="A club detectorist searching a field at sunset">
+        </picture>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content wrap">
+          <div class="hero-main">
+            <p class="kicker">For the curious at heart</p>
+            <h1 id="hero-title">OUR VILLAGE.<br><em>A world beneath.</em></h1>
+            <p>Local history, good company and the thrill of discovering what lies beneath our feet.</p>
+            <div class="hero-actions">
+              <a class="hero-button" href="#about">Explore the club <span aria-hidden="true">↗</span></a>
+              <a class="hero-link" href="#moments">See our gallery <span aria-hidden="true">↘</span></a>
+            </div>
+          </div>
+          <div class="hero-foot">
+            <span>Hampton-in-Arden Metal Detecting Club</span>
+            <span>Scroll to explore ↓</span>
+          </div>
+        </div>
+      </section>
+      <!-- Our Club -->
+      <section id="about" class="about section-pad" aria-labelledby="about-title">
+        <div class="wrap about-grid">
+          <div class="about-copy">
+            <p class="section-label">Our club</p>
+            <h2 id="about-title">
+              History is closer<br>
+              <em>than you think.</em>
+            </h2>
+            <p class="lead">The fields around us hold stories waiting to be understood.</p>
+            <p>Hampton-in-Arden Metal Detecting Club brings local detectorists together to enjoy the hobby, learn from one another and share an interest in the past.</p>
+          </div>
+          <figure class="about-photo">
+            <img src="images/club-event.jpg" alt="Metal detector standing alone in a field beneath a large tree" width="1152" height="2048" loading="lazy">
+          </figure>
+        </div>
+      </section>
+      <!-- Club Identity artwork: saved for a future About page.
+      Keep this comment limited to the artwork section below.
+      
+      <section class="banner-feature" aria-label="Club artwork"><div class="wrap"><p class="section-label">Our club identity</p><img src="images/homepage-banner.jpeg" alt="Illustrated club banner with village landscape, metal detector and Hampton-in-Arden badge" width="1536" height="1024"><p class="banner-credit">Unearthing Our Village History</p></div></section>
+      
+      -->
+      <!-- Gallery -->
+      <section id="moments" class="gallery section-pad" aria-labelledby="gallery-title">
+        <div class="wrap">
+          <div class="section-top">
+            <div>
+              <p class="section-label">Gallery</p>
+              <h2 id="gallery-title">
+  Life in the field.<br>
+  <em>People, places and moments.</em>
+</h2>
+            </div>
+            <p>A glimpse of the club in action. Stories of individual finds will follow once details are checked and photographs are approved.</p>
+          </div>
+          <div class="gallery-grid">
+            <figure class="gallery-card wide">
+              <img src="images/member-detecting.jpeg" alt="A club member metal detecting in a green field" width="2040" height="1530" loading="lazy">
+              <figcaption>
+                <span>In the field</span>
+                <small>Shared days outdoors</small>
+              </figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="images/finds-display.jpeg" alt="A display of objects found by detectorists at a community event" width="2040" height="1530" loading="lazy">
+              <figcaption>
+                <span>Sharing what we find</span>
+                <small>Club display</small>
+              </figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="images/evening-detecting.jpeg" alt="A detectorist searching a field at sunset" width="1600" height="1200" loading="lazy">
+              <figcaption>
+                <span>One more sweep</span>
+                <small>Evening in the field</small>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- Our approach -->
+      <section id="approach" class="approach section-pad" aria-labelledby="approach-title">
+        <div class="wrap">
+          <div class="approach-heading">
+            <p class="section-label">03 / Our approach</p>
+            <h2 id="approach-title">Curiosity with care.</h2>
+            <p>Good detecting starts with respect for the land, the people who own it and the history beneath it.</p>
+          </div>
+          <div class="principles">
+            <article>
+              <span>01</span>
+              <h3>Permission first</h3>
+              <p>We detect only where the appropriate landowner permission has been given.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Leave it tidy</h3>
+              <p>We fill holes carefully and treat fields, livestock and crops with respect.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Record responsibly</h3>
+              <p>We seek appropriate guidance for potentially significant objects and follow the law.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact" class="contact section-pad" aria-labelledby="contact-title">
+        <div class="wrap contact-grid">
+          <div>
+            <p class="section-label">04 / Stay in touch</p>
+            <h2 id="contact-title">The next chapter<br><em>starts here.</em></h2>
+          </div>
+          <div>
+            <p>We’re preparing a public contact address and more club stories. For now, this preview is a chance for members to shape how the club appears online.</p>
+            <span class="contact-status">Club contact details coming soon</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <span>Hampton-in-Arden Metal Detecting Club</span>
+        <span>Solihull · West Midlands</span>
+        <span>© <span id="year">2026</span></span>
+      </div>
+    </footer>
+  </body>
+</html>
