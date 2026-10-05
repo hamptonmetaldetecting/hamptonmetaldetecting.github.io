@@ -896,3 +896,244 @@ section  {
   }
 
 }
+
+/* =========================================================
+   OUR CLUB PAGE
+   ========================================================= */
+
+.club-page {
+  background: #e9dfc7;
+  color: #19342d;
+}
+
+/* --- Inner page header --- */
+
+.inner-header {
+  background: #3c4930;
+  position: relative;
+}
+
+/* --- Main introduction --- */
+
+.club-intro {
+  padding: 80px 7vw 90px;
+}
+
+.club-intro-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-areas:
+    "heading image"
+    "copy image";
+  gap: 36px 80px;
+  align-items: start;
+}
+
+.club-intro-heading {
+  grid-area: heading;
+}
+
+.club-intro-copy {
+  grid-area: copy;
+}
+
+.club-intro-image {
+  grid-area: image;
+  margin: 0;
+}
+
+.club-intro-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.club-intro .section-label,
+.club-landowners .section-label {
+  color: #98692f;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  font-size: 0.82rem;
+  margin-bottom: 24px;
+}
+
+.club-intro h1,
+.club-landowners h2 {
+  margin: 0 0 28px;
+  line-height: 0.96;
+  color: #19342d;
+  font-size: clamp(3.5rem, 6vw, 6.5rem);
+  font-weight: 500;
+}
+
+.club-intro h1 em,
+.club-landowners h2 em {
+  display: block;
+  color: #d7aa4d;
+  font-weight: 500;
+}
+
+.club-lead {
+  font-size: 1.35rem;
+  line-height: 1.5;
+  color: #263d36;
+  margin-bottom: 26px;
+}
+
+.club-intro-copy > p:not(.club-lead) {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #63706a;
+}
+
+
+/* --- Responsible detecting / future --- */
+
+.club-story {
+  background: #3c4930;
+  color: #f2ead8;
+  padding: 90px 7vw;
+}
+
+.club-story .wrap {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 80px;
+}
+
+.club-story-block {
+  border-top: 1px solid #d7aa4d;
+  padding-top: 30px;
+}
+
+.club-story .section-label {
+  color: #d7aa4d;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-bottom: 24px;
+}
+
+.club-story h2 {
+  color: #f2ead8;
+  font-size: clamp(2.6rem, 4vw, 4.7rem);
+  line-height: 1;
+  font-weight: 500;
+  margin: 0 0 30px;
+}
+
+.club-story p {
+  color: #d9ddcf;
+  font-size: 1.06rem;
+  line-height: 1.75;
+  max-width: 600px;
+}
+
+
+/* --- Landowners --- */
+
+.club-landowners {
+  background: #e9dfc7;
+  padding: 90px 7vw 110px;
+}
+
+.club-landowners .wrap {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.club-landowners h2 {
+  max-width: 900px;
+}
+
+.club-landowners > .wrap > p:not(.section-label) {
+  max-width: 720px;
+  color: #63706a;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.club-contact-note {
+  margin-top: 32px;
+  color: #98692f !important;
+  font-weight: 700;
+}
+
+
+/* --- Mobile --- */
+
+@media (max-width: 760px) {
+
+  .club-intro {
+  padding: 48px 30px 60px;
+}
+
+.club-intro-grid {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "heading"
+    "image"
+    "copy";
+  gap: 36px;
+}
+
+.club-intro-image {
+  margin: 0;
+}
+
+.club-intro-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.club-intro h1,
+.club-landowners h2 {
+  font-size: clamp(3rem, 14vw, 4.6rem);
+}
+
+.club-lead {
+  font-size: 1.18rem;
+}
+
+  .club-story {
+    padding: 64px 30px;
+  }
+
+  .club-story .wrap {
+    grid-template-columns: 1fr;
+    gap: 58px;
+  }
+
+  .club-story h2 {
+    font-size: clamp(2.6rem, 12vw, 4rem);
+  }
+
+  .club-landowners {
+    padding: 64px 30px 80px;
+  }
+}
+
+/* Our Club teaser link */
+
+.about-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 24px;
+  color: #98692f;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.about-link:hover {
+  text-decoration: underline;
+}
