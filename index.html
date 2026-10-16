@@ -27,11 +27,24 @@
           <span></span>
           <span></span>
         </button>
-        <nav id="navigation" class="navigation" aria-label="Main navigation">
-  <a href="our-club.html">Our club</a>
-  <a href="#moments">Gallery</a>
-  <a href="#approach">Our approach</a>
-  <a class="nav-button" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+<nav id="navigation" class="navigation" aria-label="Main navigation">
+
+  <div class="nav-dropdown">
+    <a href="our-club.html" class="nav-parent">Our Club</a>
+
+    <div class="nav-dropdown-menu">
+      <a href="gallery.html">Club Gallery</a>
+    </div>
+  </div>
+
+  <a href="finds.html">Finds</a>
+
+  <a href="landowners.html">Landowners</a>
+
+  <a class="nav-button" href="contact.html">
+    Get in touch <span aria-hidden="true">↗</span>
+  </a>
+
 </nav>
       </div>
     </header>
@@ -50,7 +63,7 @@
             <p>Local history, good company and the thrill of discovering what lies beneath our feet.</p>
             <div class="hero-actions">
               <a class="hero-button" href="#about">Explore the club <span aria-hidden="true">↗</span></a>
-              <a class="hero-link" href="#moments">See our gallery <span aria-hidden="true">↘</span></a>
+              <a class="hero-link" href="finds.html">Explore the finds<span aria-hidden="true">↘</span></a>
             </div>
           </div>
           <div class="hero-foot">
@@ -87,6 +100,92 @@
       <section class="banner-feature" aria-label="Club artwork"><div class="wrap"><p class="section-label">Our club identity</p><img src="images/homepage-banner.jpeg" alt="Illustrated club banner with village landscape, metal detector and Hampton-in-Arden badge" width="1536" height="1024"><p class="banner-credit">Unearthing Our Village History</p></div></section>
       
       -->
+<!-- Featured Finds -->
+<section class="featured-finds section-pad" aria-labelledby="featured-finds-title">
+  <div class="wrap">
+
+    <div class="featured-finds-heading">
+      <p class="section-label">Featured Finds</p>
+
+      <h2 id="featured-finds-title">
+        A young club.
+        <em>A long history beneath our feet.</em>
+      </h2>
+
+      <div class="featured-finds-intro">
+        <p>
+          From coins and everyday objects to discoveries reaching back as far
+          as the Bronze Age, our finds are already revealing centuries of
+          local history.
+        </p>
+
+        <a class="featured-finds-link" href="finds.html">
+          Explore the finds ↗
+        </a>
+      </div>
+    </div>
+
+    <div class="featured-finds-grid">
+
+      <article class="featured-find">
+        <img src="images/roman-commodus-denarius.png"
+             alt="Roman denarius of Commodus">
+        <p class="find-period">Roman</p>
+        <h3>Commodus denarius</h3>
+      </article>
+
+      <article class="featured-find">
+        <img src="images/elizabeth-i-hammered-coin.png"
+             alt="Elizabeth I hammered coin">
+        <p class="find-period">Tudor</p>
+        <h3>Elizabeth I hammered coin</h3>
+      </article>
+
+      <article class="featured-find">
+        <img src="images/crotal-bells.png"
+             alt="Copper alloy crotal bells">
+        <p class="find-period">Everyday objects</p>
+        <h3>Crotal bells</h3>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Landowners -->
+<section class="home-landowners section-pad" aria-labelledby="home-landowners-title">
+  <div class="wrap home-landowners-grid">
+
+    <div class="home-landowners-heading">
+      <p class="section-label">Landowners</p>
+
+      <h2 id="home-landowners-title">
+        Help us uncover
+        <em>our village story.</em>
+      </h2>
+    </div>
+
+    <div class="home-landowners-copy">
+      <p>
+        Much of our local history is still waiting beneath the fields around us.
+        With the support of local landowners, we can help uncover, record and
+        share more of that story.
+      </p>
+
+      <p>
+        Our aim is not simply to find old objects, but to help bring local
+        history to life for the wider community — especially younger generations.
+      </p>
+
+      <a class="home-landowners-link" href="landowners.html">
+        Find out about working with the club ↗
+      </a>
+    </div>
+
+  </div>
+</section>
+
       <!-- Gallery -->
       <section id="moments" class="gallery section-pad" aria-labelledby="gallery-title">
         <div class="wrap">
@@ -98,7 +197,16 @@
   <em>People, places and moments.</em>
 </h2>
             </div>
-            <p>A glimpse of the club in action. Stories of individual finds will follow once details are checked and photographs are approved.</p>
+            <div class="gallery-copy">
+  <p>
+    A glimpse of the club in action. Stories of individual finds will follow
+    once details are checked and photographs are approved.
+  </p>
+
+  <a class="gallery-link" href="gallery.html">
+    View the Club Gallery ↗
+  </a>
+</div>
           </div>
           <div class="gallery-grid">
             <figure class="gallery-card wide">
@@ -125,44 +233,27 @@
           </div>
         </div>
       </section>
-      <!-- Our approach -->
-      <section id="approach" class="approach section-pad" aria-labelledby="approach-title">
-        <div class="wrap">
-          <div class="approach-heading">
-            <p class="section-label">03 / Our approach</p>
-            <h2 id="approach-title">Curiosity with care.</h2>
-            <p>Good detecting starts with respect for the land, the people who own it and the history beneath it.</p>
-          </div>
-          <div class="principles">
-            <article>
-              <span>01</span>
-              <h3>Permission first</h3>
-              <p>We detect only where the appropriate landowner permission has been given.</p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>Leave it tidy</h3>
-              <p>We fill holes carefully and treat fields, livestock and crops with respect.</p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>Record responsibly</h3>
-              <p>We seek appropriate guidance for potentially significant objects and follow the law.</p>
-            </article>
-          </div>
-        </div>
-      </section>
+
       <!-- Contact -->
       <section id="contact" class="contact section-pad" aria-labelledby="contact-title">
         <div class="wrap contact-grid">
           <div>
-            <p class="section-label">04 / Stay in touch</p>
-            <h2 id="contact-title">The next chapter<br><em>starts here.</em></h2>
-          </div>
-          <div>
-            <p>We’re preparing a public contact address and more club stories. For now, this preview is a chance for members to shape how the club appears online.</p>
-            <span class="contact-status">Club contact details coming soon</span>
-          </div>
+            <p class="section-label">Get in touch</p>
+
+<h2>
+  The next chapter
+  <em>starts here.</em>
+</h2>
+
+<p>
+  Whether you have a question about local history, want to know more about
+  one of our finds, or would like to talk to us about detecting on your land,
+  we'd be pleased to hear from you.
+</p>
+
+<a class="button" href="contact.html">
+  Contact the club ↗
+</a>
         </div>
       </section>
     </main>
